@@ -22,4 +22,8 @@ function($scope){
       $scope.posts.push({title: $scope.title, upvotes: 0});
       $scope.title = '';
   };
+
+  $scope.increamentUpvotes = function(post) {
+    post.upvotes += 1;
+  };
 }]);

@@ -14,13 +14,13 @@ function($scope){
   ];
 
   $scope.addPost = function(){
-    $scope.posts.push({title: 'A new post!', upvotes: 0});
-  };
-
-  $scope.addPost = function(){
       if(!$scope.title || $scope.title === '') { return; }
-      $scope.posts.push({title: $scope.title, upvotes: 0});
+      $scope.posts.push({
+          title: $scope.title,
+          link: $scope.link,
+          upvotes: 0});
       $scope.title = '';
+      $scope.link = '';
   };
 
   $scope.increamentUpvotes = function(post) {

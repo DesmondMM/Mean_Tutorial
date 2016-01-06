@@ -4,7 +4,7 @@ app.controller('MainCtrl', [
 '$scope',
 function($scope){
   $scope.test = 'Hello world!';
-  scope.posts = [
+  $scope.posts = [
     'post 1',
     'post 2',
     'post 3',

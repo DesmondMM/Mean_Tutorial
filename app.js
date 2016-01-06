@@ -23,7 +23,7 @@ function($scope){
       $scope.link = '';
   };
 
-  $scope.increamentUpvotes = function(post) {
+  $scope.incrementUpvotes = function(post) {
     post.upvotes += 1;
   };
 }]);
